@@ -24,7 +24,7 @@ Add a new comment:
   <%= f.label "Content" %>
   <%= f.text_area :content %>
   <%= f.label "Username:" %>
-  <%= f.collection_select :user, User.all, :id, :username, :include_blank => true %>
+  <%= f.collection_select :user_id, User.all, :id, :username, :include_blank => true %>
   <%= f.label "New User:" %>
   <%= f.fields_for :user, @comment.build_user do |user_attributes| %>
     <%= user_attributes.text_field :username %>
