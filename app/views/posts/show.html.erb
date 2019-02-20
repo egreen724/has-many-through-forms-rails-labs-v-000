@@ -13,8 +13,8 @@ Comments:
 <% end %>
 
 Commenters:
-<%= @post.users.uniq.each do |comment| %>
-  <%= comment.user.username %>
+<%= @post.users.uniq.each do |user| %>
+  <%= user.username %>
 <% end %>
 
 
