@@ -7,10 +7,8 @@ Categories:
 
 Comments:
 <%= @post.comments.each do |comment| %>
-  <% if comment.content %>
   <%binding.pry %>
     <%comment.user.username%> says: <%= comment.content %>
-  <% end %>
 <% end %>
 
 Commenters:
