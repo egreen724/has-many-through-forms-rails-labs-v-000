@@ -6,7 +6,6 @@ class CommentsController < ApplicationController
     end
 
     comment = Comment.create(comment_params)
-    binding.pry
     redirect_to post_path(comment.post.id)
   end
 
