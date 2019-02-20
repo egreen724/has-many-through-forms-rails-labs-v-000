@@ -6,7 +6,7 @@ class CommentsController < ApplicationController
     end
 
     comment = Comment.create(comment_params)
-    redirect_to comment.post
+    redirect_to post_path(comment.post.post_id)
   end
 
   private
