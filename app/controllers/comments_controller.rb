@@ -5,8 +5,8 @@ class CommentsController < ApplicationController
       params[:comment].delete(:user_id)
     end
 
-    @comment = Comment.create(comment_params)
-    redirect_to @comment.post
+    comment = Comment.create(comment_params)
+    redirect_to comment.post
   end
 
   private
